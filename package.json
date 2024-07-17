@@ -1,0 +1,14 @@
+{
+  "name": "ameliorez_l'interface_d-un_site_mobile_avec_des_animations_css_tetart_marc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --watch style/main.scss:style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marc135169/Project4_OPC.git"
+  },
+  "private": true
+}
