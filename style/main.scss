@@ -6,8 +6,8 @@ $light-green: #99E2D0;
 $green: #008766;
 $lite-blue: #89C8FA;
 $dark-blue: #003A68;
-$purple: #9356DC;
-$pink: #ff79da;
+$purple: rgb(147, 86, 220);
+$pink: rgb(255, 121, 218);
 $grey: #353535;
 $grey2: rgba(53, 53, 53, 0.75);
 $medium-font: 500;
@@ -48,9 +48,12 @@ body{
   color: $white-color;
   font-weight: $medium-font;
   font-size: 1rem;
-
+  transition: 0.5s ease-in-out;
 }
-
+.button:hover{  
+    transform:  scale(1.01);
+    opacity: 0.8;
+}
 
 .header {  
   display: flex;
@@ -116,7 +119,12 @@ body{
   h2{
     margin-bottom: 1rem;
   }
-  
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
   .functioning__items{
     display: flex;
     flex-direction: row;
@@ -152,6 +160,7 @@ body{
     padding: 0.7rem 0;
     color: $grey2;
   }
+  
 }
 
 .restaurant {
@@ -220,16 +229,38 @@ body{
       }
 
       &__icon {
-          width: 22px;
-        height: 21px;
-        img {
+        width: 24px;
+        height: 22px;
+
+        input[type="checkbox"]{          
+          display: none;
+          &:checked  + label i {
+            transform: scale(1.05);
+            background: linear-gradient($purple, $pink);
+            color: transparent;
+            font-weight: 600;
+            -webkit-background-clip: text;
+          }          
+        }  
+        
+        label{  
+          display: block;
+          width: 100%;
+          height: 100%;
+          cursor: pointer; 
+          font-size: 0.01px;
+        }
+        
+        i {
+          text-align: center;
           font-size: 1.5rem;
           color: $grey;
           width: 100%;
           height: 100%;
-        }
+        }         
       }
     }
+    
   }
 }
 
