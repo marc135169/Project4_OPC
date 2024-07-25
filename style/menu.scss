@@ -96,13 +96,14 @@
     background-color: white;
     overflow: hidden;    
     height: 72px;
-    width: 100%;
+    width: 100%;    
     
     &:hover{
       .main__menu__starter__card__hide-icon{
         margin-right: 0;
       }
     }
+
     
     
     &__text{
@@ -147,6 +148,23 @@
   }
 }
 
-.command{
-  
+//animation
+
+.animSlideLeft{
+  animation: slideLeft 1s;  
 }
+
+@keyframes slideLeft {
+  from{transform: translateX(200px);
+  }
+}
+
+.animSlideRight{
+  animation: slideRight 1s;
+}
+
+@keyframes slideRight {
+  from{transform: translateX(-200px);
+  }
+}
+
