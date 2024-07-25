@@ -3,18 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <title>La palette du goût</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="https://kit.fontawesome.com/d44e6a74ef.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            
-        </nav>
+    <header id="la_palette" class="header__menu"> 
+        <div class="header__menu__nav">
+            <a href="../index.html"> <i class="fa-solid fa-arrow-left fa-xl"></i> </a>        
+            <div class="header__logo header__menu__logo">
+                <img src="../images/logo/ohmyfood.png" alt="Logo Oh_My_Food">
+            </div>            
+        </div>
+        <div class="header__menu__img">
+            <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image du restaurant">
+        </div>
     </header>
-    <main>
-        
+    <main class="main__menu">
+        <div class="main__menu__title">
+            <h1>La palette du goût</h1>
+            <div class="restaurant__cards__content__icon" aria-label="Ajouter aux favoris">
+                <input type="checkbox" id="iconToggle">
+                <label for="iconToggle"> Ajouter aux favoris
+                    <i class="fa-regular fa-heart restaurants__list__element__description__heart"></i>
+                </label>
+            </div>            
+        </div>
+        <section class="main__menu__starter">
+            <h2>Entrées</h2>
+            <div class="main__menu__starter__card">
+                <div class="main__menu__starter__card__text">
+                    <p>Fricassée d'escargots</p>
+                    <p>Au piment d'Espelette</p>                    
+                </div>
+                <p class="main__menu__starter__card__price">25 €</p>
+                <div class="main__menu__starter__card__hide-icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+            </div>
+            
+            <div class="card1">
+                
+            </div>
+            <div class="card2">
+                
+            </div>
+            <div class="card3">
+                
+            </div>
+        </section>
+        <section class="main__menu__dish">
+            <h2>Plats</h2>
+        </section>
+        <section class="main__menu__dessert">
+            <h2>Desserts</h2>
+        </section>
+        <button class="button">
+            Explorer nos restaurants
+        </button>
     </main>
-    <footer>
-        
+    <footer class="footer">
+        <h2>ohmyfood</h2>
+        <div>
+            <i class="utensils fa-solid fa-utensils fa-sm"></i>
+            <p>Proposer un restaurant</p>
+        </div>
+        <div>
+            <i class="handshake fa-solid fa-handshake-angle fa-sm"></i>
+            <p>Devenir partenaire</p>
+        </div>
+        <p>Mentions légales</p>
+        <p>Contact</p>
     </footer>
 </body>
 </html>

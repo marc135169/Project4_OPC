@@ -1,32 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-
+@import "variables&Co";
 @import "menu.scss";
-
-$white-color: #f3f3f3;
-$light-green: #99E2D0;
-$green: #008766;
-$lite-blue: #89C8FA;
-$dark-blue: #003A68;
-$purple: rgb(147, 86, 220);
-$pink: rgb(255, 121, 218);
-$grey: #353535;
-$grey2: rgba(53, 53, 53, 0.75);
-$medium-font: 500;
-
-
-@mixin roboto($fontcolor) {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;  
-  color: $fontcolor;
-}
-
-%flex_center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 
 * {  
   margin: 0;
@@ -35,10 +10,15 @@ $medium-font: 500;
   outline: red 1px solid;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
 body{  
   @include roboto(black);
-  /*min-width: 375px;
-  max-width: 1440px;*/
+  min-width: 375px;
+  max-width: 1440px;
 }
 .button{
   width: 218px;
@@ -152,6 +132,10 @@ body{
         margin-top: 4px;
         font-size: 14.18px;
       }      
+    }
+    
+    i:hover{
+      color: $purple;
     }
   } 
 }

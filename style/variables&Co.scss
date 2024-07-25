@@ -1,0 +1,23 @@
+$white-color: #f3f3f3;
+$light-green: #99E2D0;
+$green: #008766;
+$lite-blue: #89C8FA;
+$dark-blue: #003A68;
+$purple: rgb(147, 86, 220);
+$pink: rgb(255, 121, 218);
+$grey: #353535;
+$grey2: rgba(53, 53, 53, 0.75);
+$medium-font: 500;
+
+
+@mixin roboto($fontcolor) {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  color: $fontcolor;
+}
+
+%flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
