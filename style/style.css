@@ -111,9 +111,10 @@
 }
 .main__menu__title h1 {
   font-family: "Shrikhand", serif;
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 300;
   margin-right: 3rem;
+  width: 70%;
 }
 
 .main__menu__starter, .main__menu__dish, .main__menu__dessert {
