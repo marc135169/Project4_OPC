@@ -298,6 +298,11 @@ body {
   flex-direction: column;
   gap: 1rem;
 }
+.functioning__button {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 .functioning h2 {
   margin-bottom: 1rem;
 }
@@ -305,7 +310,7 @@ body {
   text-decoration: none;
   color: black;
 }
-.functioning .functioning__items {
+.functioning__items {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -317,7 +322,7 @@ body {
   position: relative;
   font-weight: 500;
 }
-.functioning .functioning__items__number {
+.functioning__items__number {
   position: absolute;
   left: -4%;
   top: 35%;
@@ -328,12 +333,12 @@ body {
   border-radius: 50%;
   text-align: center;
 }
-.functioning .functioning__items__number p {
+.functioning__items__number p {
   color: #f3f3f3;
   margin-top: 4px;
   font-size: 14.18px;
 }
-.functioning .functioning__items:hover i {
+.functioning__items:hover i {
   color: #9356DC;
 }
 
