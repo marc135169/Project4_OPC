@@ -314,17 +314,31 @@ body{
 
       &__icon {
         width: 24px;
-        height: 22px;
+        height: 22px;        
+        
 
         input[type="checkbox"]{
           display: none;
           &:checked + label i {
-            transform: scale(1.05);
-            background: linear-gradient($purple, $pink);
+            transform: scale(1.05);            
             color: transparent;
             font-weight: 600;
             -webkit-background-clip: text;
-          }          
+          }
+          
+          &:checked + label i::before {
+            content: '\f004';          
+            font-weight: 900; 
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;            
+            background: linear-gradient($purple, $pink);
+            -webkit-background-clip: text;
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+            animation: fillHeart 1s forwards;
+          }
         }  
         
         label{  
@@ -337,14 +351,21 @@ body{
         
         i {
           text-align: center;
-          font-size: 1.5rem;
+          font-size: 1.5rem;          
           color: $grey;
           width: 100%;
           height: 100%;
         }         
       }
     }
-    
+    @keyframes fillHeart {
+      0% {
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+      }
+      100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+    }
   }
 }
 

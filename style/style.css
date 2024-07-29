@@ -535,10 +535,22 @@ body {
 }
 .restaurant__cards__content__icon input[type=checkbox]:checked + label i {
   transform: scale(1.05);
-  background: linear-gradient(#9356DC, #FF79DA);
   color: transparent;
   font-weight: 600;
   -webkit-background-clip: text;
+}
+.restaurant__cards__content__icon input[type=checkbox]:checked + label i::before {
+  content: "\f004";
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  animation: fillHeart 1s forwards;
 }
 .restaurant__cards__content__icon label {
   display: block;
@@ -553,6 +565,14 @@ body {
   color: #353535;
   width: 100%;
   height: 100%;
+}
+@keyframes fillHeart {
+  0% {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 }
 
 footer {
