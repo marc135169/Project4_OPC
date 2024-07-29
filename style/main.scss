@@ -335,8 +335,8 @@ body{
             width: 100%;
             height: 100%;            
             background: linear-gradient($purple, $pink);
-            -webkit-background-clip: text;
-            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+            -webkit-background-clip: text;            
+            clip-path: polygon(0 0, 100% 0, 100% 0,0 0);
             animation: fillHeart 1s forwards;
           }
         }  
@@ -359,10 +359,10 @@ body{
       }
     }
     @keyframes fillHeart {
-      0% {
-        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+      0% {        
+        clip-path: polygon(0 0, 100% 0, 100% 0,0 0);
       }
-      100% {
+      100% {        
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       }
     }
