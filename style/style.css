@@ -542,9 +542,6 @@ body {
 .restaurant__cards__content__icon input[type=checkbox]:checked + label i::before {
   content: "\f004";
   font-weight: 900;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(#9356DC, #FF79DA);
