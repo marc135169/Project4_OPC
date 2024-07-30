@@ -225,6 +225,10 @@ body{
       margin: 0 0 4rem 0;      
     }
   }
+  
+  article{
+    position: relative;
+  }
 
   &__allCards{
     @media  screen and (min-width: 768px) {
@@ -239,7 +243,7 @@ body{
       gap: 6rem;
       a{
         width: 490px;
-        height: 251px;
+        height: 100%;
       }
     }
     
@@ -314,7 +318,10 @@ body{
 
       &__icon {
         width: 24px;
-        height: 22px;        
+        height: 22px; 
+        position: absolute;
+        bottom: 11%;
+        right: 1.5rem;
         
 
         input[type="checkbox"]{

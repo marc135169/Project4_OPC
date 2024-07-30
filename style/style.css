@@ -453,6 +453,9 @@ body {
     margin: 0 0 4rem 0;
   }
 }
+.restaurant article {
+  position: relative;
+}
 @media screen and (min-width: 768px) {
   .restaurant__allCards {
     display: grid;
@@ -467,7 +470,7 @@ body {
   }
   .restaurant__allCards a {
     width: 490px;
-    height: 251px;
+    height: 100%;
   }
 }
 .restaurant__cards {
@@ -529,6 +532,9 @@ body {
 .restaurant__cards__content__icon {
   width: 24px;
   height: 22px;
+  position: absolute;
+  bottom: 11%;
+  right: 1.5rem;
 }
 .restaurant__cards__content__icon input[type=checkbox] {
   display: none;
