@@ -69,9 +69,11 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
+  position: relative;
+  
 
   h1{
-    font-family: "Shrikhand", serif;  
+    font-family: "Shrikhand", serif; 
     font-size: 25px;
     font-weight: 300;
     margin-right: 3rem;
@@ -85,11 +87,21 @@
     
     @media  screen and (min-width: 1440px){
       width: 25%;
+    }    
+  }
+    .likeMenu{
+      right: 10%;
+      bottom: 25%;
+  
+      @media  screen and (min-width: 768px) {
+        right: 25%;
+      }
+      @media  screen and (min-width: 1440px) {
+        right: 35%;
+      }
+      
     }
-    
-  }  
 }
-
 
 
 .main__menu__starter, .main__menu__dish , .main__menu__dessert {

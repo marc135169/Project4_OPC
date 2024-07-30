@@ -119,6 +119,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
+  position: relative;
 }
 .main__menu__title h1 {
   font-family: "Shrikhand", serif;
@@ -137,6 +138,20 @@
 @media screen and (min-width: 1440px) {
   .main__menu__title h1 {
     width: 25%;
+  }
+}
+.main__menu__title .likeMenu {
+  right: 10%;
+  bottom: 25%;
+}
+@media screen and (min-width: 768px) {
+  .main__menu__title .likeMenu {
+    right: 25%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main__menu__title .likeMenu {
+    right: 35%;
   }
 }
 
