@@ -184,6 +184,7 @@
   overflow: hidden;
   height: 72px;
   width: 100%;
+  margin-bottom: 1rem;
 }
 .main__menu__starter__card:hover .main__menu__starter__card__hide-icon, .main__menu__dish__card:hover .main__menu__starter__card__hide-icon, .main__menu__dessert__card:hover .main__menu__starter__card__hide-icon {
   margin-right: 0;
@@ -235,24 +236,35 @@
   }
 }
 
-.animSlideLeft {
-  animation: slideLeft 1s;
+.main__menu__starter__allCards {
+  animation: slideLeft 1s forwards;
 }
 
 @keyframes slideLeft {
   from {
     transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
-.animSlideRight {
-  animation: slideRight 1s;
+.entrees {
+  animation-delay: 0.2s;
+  opacity: 0;
 }
 
-@keyframes slideRight {
-  from {
-    transform: translateX(-200px);
-  }
+.plats {
+  animation-delay: 0.7s;
+  opacity: 0;
 }
+
+.desserts {
+  animation-delay: 1.2s;
+  opacity: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
