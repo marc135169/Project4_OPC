@@ -193,11 +193,9 @@
 }
 
 //animation
-
 .main__menu__starter__allCards{
   animation: slideLeft 1s forwards;   
 }
-
 @keyframes slideLeft {
   from {
     transform: translateX(200px);
@@ -208,17 +206,14 @@
     opacity: 1;
   }
 }
-
 .entrees{
   animation-delay: 0.2s;
   opacity: 0;
 }
-
 .plats{
   animation-delay: 0.7s;
   opacity: 0;
 }
-
 .desserts{
   animation-delay: 1.2s;
   opacity: 0;
